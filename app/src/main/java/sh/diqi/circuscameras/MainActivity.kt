@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             cameraHandlers[index].release()
         }
 
-        override fun onDetach(device: UsbDevice?) {
+        override fun onDettach(device: UsbDevice?) {
             Log.d(packageName, "onDetach")
             connectedDevices.remove(device)
         }

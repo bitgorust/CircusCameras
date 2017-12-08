@@ -35,7 +35,8 @@ dependencies {
     }
     implementation("com.serenegiant:common:${commonLibVersion}") {
         exclude module: 'support-v4'
+        exclude module: 'recyclerview-v7'
     }
-    implementation project(':usbCameraCommon')
-    implementation project(':libuvccamera')
+    implementation project(':libuvccamera-release')
+    implementation project(':usbCameraCommon-release')
 }
